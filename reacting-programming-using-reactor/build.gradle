@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'com.learnreactiveprogramming.service'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Lombok
+    implementation 'io.freefair.gradle:lombok-plugin:8.1.0'
+
+    // Project Reactor
+    implementation 'io.projectreactor:reactor-core:3.6.7'
+
+    // log -logback
+    testImplementation 'ch.qos.logback:logback-classic:1.5.6'
+
+    // Reactor debug agent
+    implementation 'io.projectreactor:reactor-tools:3.6.7'
+
+    // Testing
+    testImplementation 'io.projectreactor:reactor-test:3.6.7'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testImplementation 'org.mockito:mockito-core:5.12.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.12.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
