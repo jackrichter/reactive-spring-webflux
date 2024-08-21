@@ -1,13 +1,12 @@
-package com.reactivespring.moviesinfoservice;
+package com.reactivespring.moviesinfo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MoviesInfoServiceApplication {
+public class MoviesInfoServiceApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(MoviesInfoServiceApplication.class, args);
+        SpringApplication.run(MoviesInfoServiceApp.class, args);
     }
-
 }
