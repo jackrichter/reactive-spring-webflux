@@ -1,4 +1,4 @@
-package com.reactivespring.moviesinfo;
+package com.reactivespring.moviesinfo.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @WebFluxTest(controllers = FluxAndMonoController.class)
 @AutoConfigureWebTestClient
-class FluxAndMonoControllerTest {
+public class FluxAndMonoControllerTest {
 
     @Autowired
     private WebTestClient webTestClient;

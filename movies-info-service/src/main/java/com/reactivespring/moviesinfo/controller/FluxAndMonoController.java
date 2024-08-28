@@ -1,4 +1,4 @@
-package com.reactivespring.moviesinfo;
+package com.reactivespring.moviesinfo.controller;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
